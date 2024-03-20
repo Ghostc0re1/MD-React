@@ -1,0 +1,18 @@
+/* MarkdownPreviewer.css */
+.editor-container, .preview-container {
+    padding: 20px; /* Adjust padding as needed */
+  }
+  
+  #editor {
+    width: 100%;
+    height: calc(100% - 40px); /* Adjust based on padding */
+    box-sizing: border-box;
+  }
+  
+  #preview {
+    width: 100%;
+    height: calc(100% - 40px); /* Adjust based on padding */
+    box-sizing: border-box;
+    overflow-y: auto;
+  }
+  

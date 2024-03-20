@@ -1,31 +1,29 @@
+/* src/App.css */
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: 20px;
+  height: 100vh; /* Use the full height of the viewport */
+  width: 100vw; /* Use the full width of the viewport */
 }
 
-.App-link {
-  color: #61dafb;
+.editor-container, .preview-container {
+  width: 50%; /* Split the width */
+  height: 100%; /* Use the full height */
 }
 
-.heart {
-  color: #ff0000;
+textarea {
+  width: 100%; /* Use the full width of its container */
+  height: calc(100% - 20px); /* Adjust height to fill container, accounting for padding/margin */
+  border: none;
+  padding: 10px;
 }
 
-.small {
-  font-size: 0.75rem;
+#preview {
+  width: 100%; /* Use the full width of its container */
+  height: 100%; /* Use the full height */
+  overflow-y: auto; /* Add scroll for overflow content */
+  border: none;
+  padding: 10px;
+  box-sizing: border-box;
 }
